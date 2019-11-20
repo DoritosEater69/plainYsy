@@ -1,0 +1,40 @@
+.main {
+  background-color: red;
+  width: 100% !important;
+}
+
+.gallery {
+  background-color: blue;
+  width: 100% !important;
+}
+
+.contact {
+  background-color: green;
+  width: 100% !important;
+}
+
+.impressum {
+  background-color: orange;
+  width: 100% !important;
+}
+
+.news {
+  background-color: lightgray;
+  width: 100% !important;
+  height: auto;
+}
+
+.contact {
+  background-color: darkcyan;
+}
+
+h2 {
+  font-size: 1.3em !important;
+  color: #FFFFFF !important;
+}
+
+.page {
+  margin-top: 11em !important;
+}
+
+/*# sourceMappingURL=output.css.map */

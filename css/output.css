@@ -13,6 +13,19 @@
   width: 100% !important;
 }
 
+.contactStyle {
+  content: "";
+  position: relative;
+  left: 25%;
+  width: 18%;
+  border-bottom: 6px solid #FFFFFF;
+}
+
+.contactParagraph {
+  background-color: white;
+  color: black;
+}
+
 .impressum {
   background-color: orange;
   width: 100% !important;
@@ -34,7 +47,18 @@ h2 {
 }
 
 .page {
-  margin-top: 11em !important;
+  margin-top: 0em !important;
+}
+
+.fab {
+  font-size: 2em;
+}
+
+.noSpace {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 /*# sourceMappingURL=output.css.map */

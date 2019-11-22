@@ -17,36 +17,38 @@
         <div class="container">
             <nav class="row">
                 <div class="col-12 col-md-3">
-                    <div class="row d-flex flex-row flex-md-column">
+                    <div class="row d-flex flex-row flex-md-column text-center">
                         <div class="col-3 col-md-12 main h-100 w-100">
-                            <h2>Main</h2>
+                            <h2 class="py-3">Main</h2>
                         </div>
                         <div class="col-3 col-md-12 gallery">
-                            <h2>Gallery</h2>
+                            <h2 class="py-3">Gallery</h2>
                         </div>
                         <div class="col-3 col-md-12 contact">
-                            <h2>Contact</h2>
+                            <h2 class="py-3">Contact</h2>
                         </div>
                         <div class="col-3 col-md-12 impressum">
-                            <h2>Impressum</h2>
+                            <h2 class="py-3">Impressum</h2>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12  col-md-3">
+                <div class="col-12 col-md-3 noSpace">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <!--                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>-->
                             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="gfx/2872163.jpg" class="d-block w-100" alt="...">
                             </div>
+                            <!--
                             <div class="carousel-item">
                                 <img src="gfx/2872288.jpg" class="d-block w-100" alt="...">
                             </div>
+-->
                             <div class="carousel-item">
                                 <img src="gfx/523333-PIUVEX-376.jpg" class="d-block w-100" alt="...">
                             </div>
@@ -62,18 +64,40 @@
                     </div>
                 </div>
 
-                <div class="col-12  col-md-3 d-flex justify-content-center news">
+                <div class="col-12 col-md-3 news text-center pb-5">
+                    <i class="fas fa-chevron-up py-2 text-white"></i>
                     <h1>NEWS.</h1>
+                    <div class="row">
+                        <div class="col-3">
+                            <h2>Test</h2>
+                        </div>
+                        <div class="col-3">
+                            <h2>Test</h2>
+                        </div>
+                        <div class="col-3">
+                            <h2>Test</h2>
+                        </div>
+                        <div class="col-3">
+                            <h2>Test</h2>
+                        </div>
+                
+                    </div>                    
                 </div>
 
 
-                <div class="col-12 col-md-3 contact">
-                    <img src="" class="topChevron">
-                    <h1 class="mx-auto">CONTACT.</h1>
-                    <div class="mx-auto">
+                <div class="col-12 col-md-3 contact text-center text-white">
+                    <i class="fas fa-chevron-up py-2"></i>
+                    <div class="contactStyle">                        
+                        <h1>CONTACT.</h1>
+                    </div>
+                    <p class="mt-5 contactParagraph">Drop us a message.</p>                    
+                </div>
+                
+                <div class="col-12 text-center">
+                <div class="pt-5 pb-3">
                         <i class="fab fa-facebook"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-instagram px-3"></i>
+                        <i class="fab fa-twitter-square pr-3"></i>
                         <i class="fab fa-pinterest"></i>
                     </div>
                 </div>
@@ -85,6 +109,7 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/22f961ddd5.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>

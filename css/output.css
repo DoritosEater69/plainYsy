@@ -1,16 +1,65 @@
-.main {
-  background-color: red;
-  width: 100% !important;
+.news {
+  background-color: #272343;
+  color: black;
 }
 
-.gallery {
-  background-color: blue;
-  width: 100% !important;
+.news {
+  background-color: #bae8e8;
+  color: black !important;
 }
 
 .contact {
-  background-color: green;
+  background-color: #bae8e8;
+  color: black !important;
+}
+
+.contact .contactParagraph {
+  background-color: #e3f6f5;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("../gfx/left.png");
+  height: 50px;
+  width: 50px;
+}
+
+.carousel-control-next-icon {
+  background-image: url("../gfx/right.png");
+  height: 50px;
+  width: 50px;
+}
+
+.carousel-indicators li {
+  background-color: black !important;
+}
+
+.main {
+  background-color: inherit;
   width: 100% !important;
+}
+
+.main h2 {
+  color: black !important;
+}
+
+.gallery {
+  background-color: inherit;
+  color: black;
+  width: 100% !important;
+}
+
+.gallery h2 {
+  color: black !important;
+}
+
+.contactB {
+  background-color: inherit;
+  color: black;
+  width: 100% !important;
+}
+
+.contactB h2 {
+  color: black !important;
 }
 
 .contactStyle {
@@ -18,7 +67,7 @@
   position: relative;
   left: 25%;
   width: 18%;
-  border-bottom: 6px solid #FFFFFF;
+  border-bottom: 6px solid black;
 }
 
 .contactParagraph {
@@ -27,18 +76,31 @@
 }
 
 .impressum {
-  background-color: orange;
+  background-color: inherit;
+  color: black;
   width: 100% !important;
 }
 
+.impressum h2 {
+  color: black !important;
+}
+
 .news {
-  background-color: lightgray;
   width: 100% !important;
   height: auto;
 }
 
+.news h2 {
+  content: "";
+  position: relative;
+  left: 0;
+  width: 25%;
+  border-bottom: 3px solid black;
+}
+
 .contact {
-  background-color: darkcyan;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 h2 {
@@ -59,6 +121,22 @@ h2 {
   margin-right: 0 !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .page {
+    padding-top: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .page {
+    padding-top: 20%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .page {
+    padding-top: 20%;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */

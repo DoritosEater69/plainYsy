@@ -17,6 +17,10 @@
   background-color: #e3f6f5;
 }
 
+body {
+  background-color: inherit;
+}
+
 .carousel-control-prev-icon {
   background-image: url("../gfx/left.png");
   height: 50px;
@@ -42,6 +46,10 @@
   color: black !important;
 }
 
+.contact {
+  z-index: 100;
+}
+
 .gallery {
   background-color: inherit;
   color: black;
@@ -50,6 +58,18 @@
 
 .gallery h2 {
   color: black !important;
+}
+
+.newsFolded {
+  display: none;
+}
+
+#newsChevron .fa-chevron-up {
+  display: none;
+}
+
+.contactFolded {
+  display: none;
 }
 
 .contactB {
@@ -65,9 +85,7 @@
 .contactStyle {
   content: "";
   position: relative;
-  left: 25%;
-  width: 18%;
-  border-bottom: 6px solid black;
+  border-top: 2px solid lightgray;
 }
 
 .contactParagraph {
@@ -88,6 +106,7 @@
 .news {
   width: 100% !important;
   height: auto;
+  z-index: 50;
 }
 
 .news h2 {
@@ -109,7 +128,7 @@ h2 {
 }
 
 .page {
-  margin-top: 0em !important;
+  margin-top: 8em;
 }
 
 .fab {

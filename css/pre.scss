@@ -27,10 +27,13 @@ $template: light;
 }
 
 
-body{
+body {
     background-color: inherit;
 }
 
+h1{
+    font-size: 1em;
+}
 .carousel-control-prev-icon {
     background-image: url("../gfx/left.png");
     height: 50px;
@@ -44,7 +47,7 @@ body{
 }
 
 .carousel-indicators li {
-    background-color: black !important;
+    background-color: white !important;
 }
 
 .main {
@@ -70,15 +73,45 @@ body{
     color: black !important;
 }
 
-.newsFolded{
+.galleryFold {
+    background-color: #bae8e8;
+    color: black;
+    width: 100% !important;
+}
+
+
+.galleryFold .galleryFolded {
+    background-color: white !important;
+    overflow-y: scroll;
+    height: 300px;
     display: none;
 }
 
-#newsChevron .fa-chevron-up{
+
+.galleryFolded ul li {
+    width: 33%;
+    max-width: 100%;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.galleryFolded ul li img {
+    height: 100%;
+    width: 100%;
+}
+
+.newsFolded {
     display: none;
 }
 
-.contactFolded{
+#newsChevron .fa-chevron-up {
+    display: none;
+}
+
+.contactFolded {
     display: none;
 }
 
@@ -138,7 +171,7 @@ h2 {
 }
 
 .page {
-    margin-top: 8em;
+    margin-top: 0;
 }
 
 .fab {
@@ -152,33 +185,86 @@ h2 {
     padding-right: 0 !important;
 }
 
-.galOverlay{
+.galOverlay {
     top: 0%;
     left: 0%;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
     position: absolute;
 }
 
+.imgOverlay {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0.3%, rgba(255, 255, 255, 0.5) 50%) !important;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 50%);
+}
+
+.imgOverlay h2 {
+    color: black !important;
+}
+
+.imgOverlay p {
+    color: black !important;
+}
+
+
+hr {
+    z-index: 200 !important;
+    top: 3% !important;
+    padding-top: 0 !important;
+    border: 0 !important;
+    width: 100% !important;
+    border-top: 8px solid black !important;
+    position: relative !important;
+}
 
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {}
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .page {
-        padding-top: 0;
+        padding-top: 8em !important;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .page {
-        padding-top: 20%;
+        padding-top: 0 !important
     }
 }
 
 @media only screen and (min-width: 992px) {
     .page {
-        padding-top: 20%;
+        padding-top: 0 !important;
+    }
+}
+
+
+//Keyframe Animations
+//Called by JQuery
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    bottom: 0%;
+    top: 0;
+    opacity: 0;
+}
+
+.overlayContent{
+    
+
+}
+
+.overlayAnim {
+    animation: overlayAnim 1s;
+}
+
+@-webkit-keyframes overlayAnim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

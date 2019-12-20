@@ -8,8 +8,13 @@ $(document).ready(function () {
     var page = $(".page");
     var clicks = 0;
     var newsOpen = new Boolean("false");
+    var galleryOpen = new Boolean("false");
     var contactOpen = new Boolean("false");
-    
+
+    var overlay = $(".overlay");
+
+    var imgHover = (".img-hover");
+
     var nextBtn = $(".carousel-control-next-icon");
     var prevBtn = $(".carousel-control-prev-icon");
 
@@ -96,12 +101,33 @@ $(document).ready(function () {
         },
     });
 
+    overlay.on({
+        "mouseover": function () {
+            $(this).addClass("d-flex align-items-center justify-content-center");
+            $(this).addClass("overlayAnim");
+            $(this).css("opacity", "1");
+        },
+
+        "mouseout": function () {
+            $(this).removeClass("d-flex align-items-center justify-content-center");
+            $(this).removeClass("overlayAnim");
+            $(this).css("opacity", "0");
+        },
+    });
+
 
     //News Tile Hover
     $(".news").hover(function () {
         $(".news h1").css("color", "rgba(0,0,0,0.2)");
     }, function () {
         $(".news h1").css("color", "black");
+    });
+
+    //Gallery Tile Hover
+    $(".galleryFold").hover(function () {
+        $(".galleryFold h1").css("color", "rgba(0,0,0,0.2)");
+    }, function () {
+        $(".galleryFold h1").css("color", "black");
     });
 
     //Contact Tile Hover
@@ -176,27 +202,46 @@ $(document).ready(function () {
             }
         },
     });
+
+    //Contact Tile
+    $(".galleryFold").on({
+        "mousedown": function () {
+            $(".galleryFolded").slideToggle("slow", function () {
+                clicks++;
+                galleryOpen = "true";
+                console.log(clicks);
+            });
+
+            //First click -> FontIncrease
+            if (clicks % 2 == 0) {
+                $(".galleryFold h1").animate({
+                    fontSize: "3.5em",
+                });
+                $(".page").animate({
+                    marginTop: "0",
+                });
+
+                //First click -> FontDecrease                
+            } else {
+                galleryOpen = "false";
+                $(".galleryFold h1").animate({
+                    fontSize: "2.5em",
+                });
+                $(".page").animate({
+                    marginTop: "6em",
+                });
+            }
+        },
+    });
+
+    imgHover.hover(function () {
+        //Content wird Active - Animation / Border (Random Border) 
+    });
+
     if (newsOpen == "false" && contactOpen == "false") {
         $(".page").animate({
             marginTop: "6em",
         });
     }
-    
-    nextBtn.on({
-        "mousedown": function(){
-            $("body").css("background-color", getRandomColor());
-        }
-    });
-    
+
 });
-
-
-
-function getRandomColor() {
-  var letters = '0123456789ABCDEF';
-  var color = '#';
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 10)];
-  }
-  return color;
-}

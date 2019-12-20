@@ -161,6 +161,23 @@
 
                 <?php include('includes/spacerText.html'); ?>
             </div>
+            
+            <div class="row">
+                <div class="col-12 d-flex justify-content-end">
+                    <div class="addContent7 position-absolute p-3">
+                        <button type="button" class="btn btn-danger m-1" id="delBtn7">X</button>
+                        <select class="form-control form-control-sm">
+                            <option id="default">Default</option>
+                            <option id="gallery">Gallery</option>
+                            <option id="news">News</option>
+                            <option id="contact">Contact</option>
+                            <option id="social">Social</option>
+                        </select>
+                    </div>
+                </div>
+
+                <?php include('includes/spacerTextIcons.html'); ?>
+            </div>
         </div>
     </div>
 

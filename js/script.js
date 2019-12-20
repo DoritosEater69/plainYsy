@@ -13,10 +13,20 @@ $(document).ready(function () {
 
     var overlay = $(".overlay");
 
-    var imgHover = (".img-hover");
+    var imgHover = $(".img-hover");
+
+    var settingsChevUp = (".settings .fa-chevron-up");
+    var settingsChevDown = (".settings .fa-chevron-down");
 
     var nextBtn = $(".carousel-control-next-icon");
     var prevBtn = $(".carousel-control-prev-icon");
+    
+    var headerEdit = (".addContent1");
+    var navEdit = (".addContent2");
+    var galleryEdit = (".addContent3");
+    var newsEdit = (".addContent4");
+    var contactEdit = (".addContent5");
+    var socialEdit = (".addContent6");
 
     //Social Icons Color on Hover
     facebook.hover(function () {
@@ -242,6 +252,9 @@ $(document).ready(function () {
         $(".page").animate({
             marginTop: "6em",
         });
-    }
+    };
+
+
+
 
 });

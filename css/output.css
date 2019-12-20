@@ -17,6 +17,29 @@
   background-color: #e3f6f5;
 }
 
+.settings {
+  z-index: 9999999999 !important;
+}
+
+.addContent1,
+.addContent2,
+.addContent3,
+.addContent4,
+.addContent5,
+.addContent6 {
+  z-index: 9999999999 !important;
+  position: sticky !important;
+}
+
+.settingsContent {
+  background-color: aqua !important;
+  border-bottom-right-radius: 30px;
+}
+
+.settings .fa-chevron-down {
+  display: none;
+}
+
 body {
   background-color: inherit;
 }
@@ -141,6 +164,10 @@ h1 {
   z-index: 50;
 }
 
+#component0 {
+  z-index: -99999 !important;
+}
+
 .news h2 {
   content: "";
   position: relative;
@@ -194,6 +221,16 @@ h2 {
 
 .imgOverlay p {
   color: black !important;
+}
+
+.spacer h1 {
+  font-size: 2em;
+  color: white;
+}
+
+.spacer p {
+  font-size: 1em;
+  color: white;
 }
 
 hr {

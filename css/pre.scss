@@ -27,13 +27,41 @@ $template: light;
 }
 
 
+//SETTINGS STYLES//
+.settings {
+    z-index: 9999999999 !important;
+}
+
+.addContent1,
+.addContent2,
+.addContent3,
+.addContent4,
+.addContent5,
+.addContent6 {
+    z-index: 9999999999 !important;
+    position: sticky !important;
+}
+
+.settingsContent {
+    background-color: aqua !important;
+    border-bottom-right-radius: 30px;
+}
+
+.settings .fa-chevron-up {}
+
+.settings .fa-chevron-down {
+    display: none;
+}
+
+/////////////////////
 body {
     background-color: inherit;
 }
 
-h1{
+h1 {
     font-size: 1em;
 }
+
 .carousel-control-prev-icon {
     background-image: url("../gfx/left.png");
     height: 50px;
@@ -152,6 +180,10 @@ h1{
     z-index: 50;
 }
 
+#component0 {
+    z-index: -99999 !important;
+}
+
 .news h2 {
     content: '';
     position: relative;
@@ -208,6 +240,20 @@ h2 {
 }
 
 
+.spacer {}
+
+.spacerContent {}
+
+.spacer h1 {
+    font-size: 2em;
+    color: white;
+}
+
+.spacer p {
+    font-size: 1em;
+    color: white;
+}
+
 hr {
     z-index: 200 !important;
     top: 3% !important;
@@ -251,10 +297,7 @@ hr {
     opacity: 0;
 }
 
-.overlayContent{
-    
-
-}
+.overlayContent {}
 
 .overlayAnim {
     animation: overlayAnim 1s;

@@ -13,6 +13,16 @@
   color: black !important;
 }
 
+.spacer {
+  background-color: #bae8e8;
+  color: black !important;
+}
+
+.spacerIcons {
+  background-color: #bae8e8;
+  color: black !important;
+}
+
 .contact .contactParagraph {
   background-color: #e3f6f5;
 }
@@ -190,7 +200,28 @@ h2 {
   margin-top: 0;
 }
 
-.fab {
+.fas {
+  font-size: 3em;
+  color: white;
+}
+
+.fa-facebook {
+  color: black;
+  font-size: 2em;
+}
+
+.fa-instagram {
+  color: black;
+  font-size: 2em;
+}
+
+.fa-twitter-square {
+  color: black;
+  font-size: 2em;
+}
+
+.fa-pinterest {
+  color: black;
   font-size: 2em;
 }
 

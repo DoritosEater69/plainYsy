@@ -21,6 +21,16 @@ $template: light;
         color: black !important;
     }
 
+    .spacer {
+        background-color: $light;
+        color: black !important;
+    }
+
+    .spacerIcons {
+        background-color: $light;
+        color: black !important;
+    }
+
     .contact .contactParagraph {
         background-color: $lighter;
     }
@@ -206,7 +216,29 @@ h2 {
     margin-top: 0;
 }
 
-.fab {
+
+.fas {
+    font-size: 3em;
+    color: white;
+}
+
+.fa-facebook {
+    color: black;
+    font-size: 2em;
+}
+
+.fa-instagram {
+    color: black;
+    font-size: 2em;
+}
+
+.fa-twitter-square {
+    color: black;
+    font-size: 2em;
+}
+
+.fa-pinterest {
+    color: black;
     font-size: 2em;
 }
 

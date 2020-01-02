@@ -7,6 +7,8 @@ $(document).ready(function () {
     var del4 = $(".addContent4 .btn-danger");
     var del5 = $(".addContent5 .btn-danger");
     var del6 = $(".addContent6 .btn-danger");
+    var del7 = $(".addContent7 .btn-danger");
+    var del8 = $(".addContent8 .btn-danger");
     var banner = $("#component0");
     var navbar = $("#component1");
     var carousel = $("#component2");
@@ -14,6 +16,8 @@ $(document).ready(function () {
     var gallery = $("#component4");
     var contact = $("#component5");
     var footer = $("#component6");
+    var spacer = $("#component7");
+    var spacerIcons = $("#component8");
 
 
     del1.on({
@@ -51,5 +55,18 @@ $(document).ready(function () {
             footer.hide();
         },
     });
+
+    del7.on({
+        "mousedown": function () {
+            spacer.hide();
+        },
+    });
+
+    del8.on({
+        "mousedown": function () {
+            spacerIcons.hide();
+        },
+    });
+
 
 });

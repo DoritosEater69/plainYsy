@@ -161,10 +161,10 @@
 
                 <?php include('includes/spacerText.html'); ?>
             </div>
-            
+
             <div class="row">
                 <div class="col-12 d-flex justify-content-end">
-                    <div class="addContent7 position-absolute p-3">
+                    <div class="addContent8 position-absolute p-3">
                         <button type="button" class="btn btn-danger m-1" id="delBtn7">X</button>
                         <select class="form-control form-control-sm">
                             <option id="default">Default</option>
@@ -177,10 +177,10 @@
                 </div>
 
                 <?php include('includes/spacerTextIcons.html'); ?>
+
             </div>
         </div>
     </div>
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -47,7 +47,9 @@ $template: light;
 .addContent3,
 .addContent4,
 .addContent5,
-.addContent6 {
+.addContent6,
+.addContent7,
+.addContent8 {
     z-index: 9999999999 !important;
     position: sticky !important;
 }
@@ -126,9 +128,12 @@ h1 {
 }
 
 
-.galleryFolded ul li {
-    width: 33%;
+.galleryFolded div {
+    width: 100%;
     max-width: 100%;
+}
+
+.galleryFolded img {
     display: inline-block;
     float: left;
     text-align: center;
@@ -136,7 +141,7 @@ h1 {
     position: relative;
 }
 
-.galleryFolded ul li img {
+.galleryFolded img {
     height: 100%;
     width: 100%;
 }
@@ -216,6 +221,10 @@ h2 {
     margin-top: 0;
 }
 
+.fa-adobe {
+    font-size: 3em;
+    color: white;
+}
 
 .fas {
     font-size: 3em;
@@ -322,14 +331,16 @@ hr {
 //Called by JQuery
 .overlay {
     background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
+    width: 33% !important;
     height: 100%;
     bottom: 0%;
     top: 0;
     opacity: 0;
 }
 
-.overlayContent {}
+.overlayContent {
+    width: 100% !important;
+}
 
 .overlayAnim {
     animation: overlayAnim 1s;

@@ -2,8 +2,7 @@ var $ = jQuery;
 
 function loadNewContent(){    
     var selectedOption = $("#dropDown1 option:selected").val();
-    var test = $.post("components.php", {option_value: selectedOption});    
-    console.log(test);
+    $.post("index.php", {option_value: selectedOption});        
 }
 
 $(document).ready(function () {

@@ -13,3 +13,14 @@
 [20-Dec-2019 15:29:27 UTC] PHP Warning:  include(): Failed opening 'includes/spacerText.html' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/git/_programming/web/plainYsy/index.php on line 162
 [20-Dec-2019 15:29:30 UTC] PHP Warning:  include(includes/spacerText.html): failed to open stream: No such file or directory in /var/www/html/git/_programming/web/plainYsy/index.php on line 162
 [20-Dec-2019 15:29:30 UTC] PHP Warning:  include(): Failed opening 'includes/spacerText.html' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/git/_programming/web/plainYsy/index.php on line 162
+[02-Jan-2020 14:04:14 UTC] PHP Fatal error:  Cannot use [] for reading in /var/www/html/git/_programming/web/plainYsy/index.php on line 69
+[02-Jan-2020 14:18:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function value() in /var/www/html/git/_programming/web/plainYsy/index.php:69
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/git/_programming/web/plainYsy/index.php on line 69
+[02-Jan-2020 14:18:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function value() in /var/www/html/git/_programming/web/plainYsy/index.php:69
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/git/_programming/web/plainYsy/index.php on line 69
+[02-Jan-2020 14:20:48 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /var/www/html/git/_programming/web/plainYsy/index.php on line 74
+[02-Jan-2020 14:20:52 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /var/www/html/git/_programming/web/plainYsy/index.php on line 74

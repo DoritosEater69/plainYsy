@@ -1,5 +1,15 @@
 var $ = jQuery;
+
+function loadNewContent(){    
+    var selectedOption = $("#dropDown1 option:selected").val();
+    var test = $.post("components.php", {option_value: selectedOption});    
+    console.log(test);
+}
+
 $(document).ready(function () {
+    
+    $("#dropDown1").change(loadNewContent());
+    
     var facebook = $(".fa-facebook");
     var instagram = $(".fa-instagram");
     var twitter = $(".fa-twitter-square");
@@ -242,10 +252,6 @@ $(document).ready(function () {
                 });
             }
         },
-    });
-
-    imgHover.hover(function () {
-        //Content wird Active - Animation / Border (Random Border) 
     });
 
     if (newsOpen == "false" && contactOpen == "false") {

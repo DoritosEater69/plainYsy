@@ -1,6 +1,6 @@
 var $ = jQuery;
-$(document).ready(function () {
 
+$(document).ready(function () {
     var del1 = $(".addContent1 .btn-danger");
     var del2 = $(".addContent2 .btn-danger");
     var del3 = $(".addContent3 .btn-danger");
@@ -18,7 +18,6 @@ $(document).ready(function () {
     var footer = $("#component6");
     var spacer = $("#component7");
     var spacerIcons = $("#component8");
-
 
     del1.on({
         "mousedown": function () {
@@ -66,7 +65,17 @@ $(document).ready(function () {
         "mousedown": function () {
             spacerIcons.hide();
         },
-    });
-
+    });    
 
 });
+
+function editMode() {
+    var editMode = document.getElementById("editMode");
+    if (editMode.checked == true) {
+        $(".addContent1, .addContent2, .addContent3, .addContent4, .addContent5, .addContent6, .addContent7, .addContent8 ").show();
+        console.log("active");
+    } else {
+        $(".addContent1, .addContent2, .addContent3, .addContent4, .addContent5, .addContent6, .addContent7, .addContent8 ").hide();
+        console.log("hidden");
+    }
+}

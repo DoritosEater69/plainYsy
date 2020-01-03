@@ -1,14 +1,32 @@
 var $ = jQuery;
 
-function loadNewContent(){    
-    var selectedOption = $("#dropDown1 option:selected").val();
-    $.post("index.php", {option_value: selectedOption});        
+function loadNewContent1() {
+    var selectedOption = $("#dropDown1 option:selected").val();    
+    $.post("index.php", {
+        option_value: selectedOption
+    }, response);
+    console.log("Script.js value: ", selectedOption);
 }
 
+function loadNewContent(ID) {
+    var selectedOption = $('ID' + "option:selected").val();
+    $.post("index.php", {
+        option_value: selectedOption
+    }, response);
+    console.log("Script.js value: ", selectedOption);
+}
+
+function response(data) {
+//WHOLE PAGE WILL BE UPDATED - FIX THIS TO ONLY AT SPECIFIC COMPONENT
+    $("body").html(data);
+    console.log(data);
+}
+
+
 $(document).ready(function () {
-    
-    $("#dropDown1").change(loadNewContent());
-    
+
+//        $("#dropDown1").change(loadNewContent());
+
     var facebook = $(".fa-facebook");
     var instagram = $(".fa-instagram");
     var twitter = $(".fa-twitter-square");
@@ -29,7 +47,7 @@ $(document).ready(function () {
 
     var nextBtn = $(".carousel-control-next-icon");
     var prevBtn = $(".carousel-control-prev-icon");
-    
+
     var headerEdit = (".addContent1");
     var navEdit = (".addContent2");
     var galleryEdit = (".addContent3");

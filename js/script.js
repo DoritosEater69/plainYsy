@@ -1,24 +1,18 @@
 var $ = jQuery;
 
-function loadNewContent1() {
-    var selectedOption = $("#dropDown1 option:selected").val();    
+function loadNewContent(ID) {       
+    var IDval = $(ID + " :selected").val();    
+    console.log(IDval);
+    
     $.post("index.php", {
-        option_value: selectedOption
+        option_value: IDval
     }, response);
-    console.log("Script.js value: ", selectedOption);
-}
-
-function loadNewContent(ID) {
-    var selectedOption = $('ID' + "option:selected").val();
-    $.post("index.php", {
-        option_value: selectedOption
-    }, response);
-    console.log("Script.js value: ", selectedOption);
+    console.log("Script.js value: ", IDval);
 }
 
 function response(data) {
 //WHOLE PAGE WILL BE UPDATED - FIX THIS TO ONLY AT SPECIFIC COMPONENT
-    $("body").html(data);
+    $("body").html(data);    
     console.log(data);
 }
 

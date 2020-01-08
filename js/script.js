@@ -1,9 +1,9 @@
 var $ = jQuery;
 
-function loadNewContent(ID) {       
-    var IDval = $(ID + " :selected").val();    
-    console.log(IDval);
-    
+function loadNewContent(ID) {
+    var IDval = $(ID + " :selected").val();
+    console.log("Full ID Val: ", IDval);
+
     $.post("index.php", {
         option_value: IDval
     }, response);
@@ -11,15 +11,15 @@ function loadNewContent(ID) {
 }
 
 function response(data) {
-//WHOLE PAGE WILL BE UPDATED - FIX THIS TO ONLY AT SPECIFIC COMPONENT
-    $("body").html(data);    
+    //WHOLE PAGE WILL BE UPDATED - FIX THIS TO ONLY AT SPECIFIC COMPONENT
+    $('#value').html(data);
     console.log(data);
 }
 
 
 $(document).ready(function () {
 
-//        $("#dropDown1").change(loadNewContent());
+    //        $("#dropDown1").change(loadNewContent());
 
     var facebook = $(".fa-facebook");
     var instagram = $(".fa-instagram");

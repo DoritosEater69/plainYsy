@@ -65,7 +65,7 @@
                     </div>
                 </div>
                 <?php include('includes/nav.html'); ?>
-                <?php include('components.php'); ?>
+                <div class="col-12 empty"></div>
             </div>
 
             <div class="row">

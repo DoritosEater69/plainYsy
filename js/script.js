@@ -1,20 +1,33 @@
 var $ = jQuery;
 
+//function loadNewContent(ID) {
+//    var IDval = $(ID + " :selected").val();
+//    console.log("Full ID Val: ", IDval);
+//
+//    $.post("index.php", {
+//        option_value: IDval
+//    }, response);
+//    console.log("Script.js value: ", IDval);
+//}
+//
+//function response(data) {
+//    //WHOLE PAGE WILL BE UPDATED - FIX THIS TO ONLY AT SPECIFIC COMPONENT
+//    $('#value').html(data);
+//    console.log(data);
+//}
+
+
 function loadNewContent(ID) {
     var IDval = $(ID + " :selected").val();
     console.log("Full ID Val: ", IDval);
 
-    $.post("index.php", {
-        option_value: IDval
-    }, response);
-    console.log("Script.js value: ", IDval);
+    $('.empty').load("components.php");
+        $.post("components.php", {
+            option_value: IDval
+        });
+    console.log("ID: ", IDval);
 }
 
-function response(data) {
-    //WHOLE PAGE WILL BE UPDATED - FIX THIS TO ONLY AT SPECIFIC COMPONENT
-    $('#value').html(data);
-    console.log(data);
-}
 
 
 $(document).ready(function () {
